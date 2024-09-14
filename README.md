@@ -1,7 +1,7 @@
 # Project-01
 
-# Your Name
+# Ian Fernandez
 
-# Your Github username
+# Phemto
 
 # List the things you added for points
