@@ -87,16 +87,17 @@ You turn your phone on. 3 texts from {friend_name}. 1 from mom.
     ->friends_text
 +[Mom]
     ->moms_text
-
+*[Continue getting ready]
+    ->bed_2
 == friends_text ==
 ~ morningtext_seen = morningtext_seen + 1
 48min:"I'm up early. Stopping by ******'s before school."
 46min"Let me know if you want to smoke before bell"
 5min"Are you awake??"
 *["Just woke up. Be there soon."]
- ->bed_2
+ ->check_phone
 *["Shit. On my way.""]
- ->bed_2
+ ->check_phone
 
 
 == moms_text ==
@@ -104,7 +105,8 @@ You turn your phone on. 3 texts from {friend_name}. 1 from mom.
       Mom:
 30min: Make me proud on your test today! I'll have your favorite waiting for you at home tonight. 
 *[❤️]
- ->bed_2
+ ->check_phone
+ 
 == bed_2 ==
 *[Get dressed]
     -> onto_school
